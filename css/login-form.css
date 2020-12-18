@@ -1,0 +1,27 @@
+#container-login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#small-login-form {
+    border-radius: 20px;
+    border: darkcyan;
+    background-color: rgb(240, 217, 211);
+    width: 500px;
+    height: 700px;
+    margin-top: 10px;
+}
+
+#small-small-login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#img-login-form {
+    width: 300px;
+    height: 300px;
+}

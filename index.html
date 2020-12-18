@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA8XXDoy1UXDoJe3Kj8_xncF1QqP_lYO_M",
+            authDomain: "jpan-55d2b.firebaseapp.com",
+            projectId: "jpan-55d2b",
+            storageBucket: "jpan-55d2b.appspot.com",
+            messagingSenderId: "614008891962",
+            appId: "1:614008891962:web:df5e821c9d8ae60ba3a303"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // var storage = firebase.storage();
+        // var storage = firebase.app().storage("");
+    </script>
+    <!-- 
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAmtlbFh_WPuSNPp0wPs8Kh55Yd8zfu4Go",
+            authDomain: "ci52-c1a82.firebaseapp.com",
+            databaseURL: "https://ci52-c1a82.firebaseio.com",
+            projectId: "ci52-c1a82",
+            storageBucket: "ci52-c1a82.appspot.com",
+            messagingSenderId: "600240343974",
+            appId: "1:600240343974:web:8845944f21a8558f2e1d67"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
+</head>
+
+<body id="body" style="margin: 0;">
+    <!-- <create-courses></create-courses> -->
+    <!-- <nav-bar></nav-bar> -->
+    <!-- <story-container content="aaaa"></story-container> -->
+    <!-- <content-home></content-home> -->
+    <!-- <register-form></register-form> -->
+    <!-- <login-form></login-form> -->
+    <!-- <input-wrapper label="ten dang ky" type="text" error="nhap vao ten dang ky" value="buikhiem"></input-wrapper> -->
+</body>
+<template id="input-wrapper-template">
+    <link rel="stylesheet" href="./css/input-wrapper.css">
+    <div id="input-wrapper">
+        <input type="text" name="" id="input-main" placeholder="Main Input">
+        <div id="input-error"></div>
+    </div>
+</template>
+<template id="register-form-template">
+    <link rel="stylesheet" href="./css/register-form.css">
+    <form action="" id="register-form">
+        <div id="container-register-form">
+            <div id="small-register-form">
+                <div id="small-small-register-form">
+                    <img id="img-register-form" src="./image/iconnhat.png" alt="">
+                    <h2>Đăng ký tài khoản</h2>
+                    <input-wrapper id="name" label="Your name" type="text"></input-wrapper>
+                    <input-wrapper id="email" label="Email" type="email"></input-wrapper>
+                    <input-wrapper id="password" label="Password" type="password"></input-wrapper>
+                    <input-wrapper id="password-confim" label="Password confim" type="password"></input-wrapper>
+                    <button id="register-button">Đăng ký</button>
+                    <p>Đã có tài khoản ..! <a href="#/sign-in">Đăng nhập ngay</a></p>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</template>
+<template id="login-form-template">
+    <link rel="stylesheet" href="./css/login-form.css">
+    <form action="" id="login-form">
+        <div id="container-login-form">
+            <div id="small-login-form">
+                <div id="small-small-login-form">
+                    <img id="img-login-form" src="./image/iconnhat.png" alt="">
+                    <h2>Đăng nhập tài khoản</h2>
+                    <input-wrapper id="email" label="Email" type="email"></input-wrapper>
+                    <input-wrapper id="password" label="password" type="password"></input-wrapper>
+                    <div>
+                        <button id="login-button">Đăng nhập</button>
+                        <p>Tôi chưa có tài khoản ! <a href="#/sign-up">Đăng ký ngay</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</template>
+<template id="navbar-template">
+    <!-- navbar-template -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <div id="navbar">
+        <div id="brand">
+            <img src="./image/iconnhat.png" alt="" id="brand-image">
+            <span id="brand-text">Japanses Learning</span>
+            <!-- <p id="brand-text">Share Stories</p> -->
+        </div>
+        <div id="current-user-info" class="nav">
+            <a href="#/course">Xem khóa học</a>
+            <a href="#" id="current-user-name">Thông tin</a>
+            <a href="#" id="logout">Đăng xuất</a>
+            <a href="#/create-course" id="createCourse">➕ Tạo khóa học</a>
+        </div>
+        <div id="menu" class="nav">
+            <a href="#/sign-in">Login</a>
+            <a href="#/sign-up">Sign up</a>
+        </div>
+    </div>
+
+</template>
+<template id="create-courses-template">
+    <div id = "container-creat-course">
+        <form id="create_description_course">
+            <select name="category" id="category-courses">
+                <option value="n1">N1</option>
+                <option value="n2">N2</option>
+                <option value="n3">N3</option>
+                <option value="n4">N4</option>
+                <option value="n5">N5</option>
+            </select>
+            <input type="text" id="create-name-course" placeholder="Ten bai hoc">
+            <input type="text" id="create-owner-course" placeholder="Ten tac gia">
+            <textarea id="create-description-content-course" placeholder="Mo ta khoa hoc"></textarea>
+            <input type="file" id="create-file-course">
+            <button id="create-course-button">Create</button>
+        </form>
+    </div>
+    <div id="process">
+
+    </div>
+</template>
+<template id="menu-template">
+    <link rel="stylesheet" href="./css/home-page.css">
+    <div id="menu-home">
+        <a href="#/">🏠</a>
+        <a href="#/">Trang Chủ</a>
+        <!-- <a href="#">Kho hoc</a> -->
+        <a href="#/register-course">Đăng kí VIP</a>
+    </div>
+</template>
+<template id="list-template">
+    <a href="" id="list-href"></a>
+</template>
+<template id="course_list_template">
+    <link rel="stylesheet" href="./css/list-a.css">
+
+    <div id="list-a"></div>
+<!-- 
+    </div>
+    <div>
+        <a href="#/n2">N2</a>
+    </div>
+    <div>
+        <a href="#/n3">N3</a>
+    </div>
+    <div>
+        <a href="#/n4">N4</a>
+    </div>
+    <div>
+        <a href="#/n5">N5</a>
+    </div> -->
+</template>
+<template id="course-register-template">
+    <div id="course-register">
+
+        <div id="name-course-register">
+
+        </div>
+        <button id="register-course">Đăng kí học</button>
+        <button id="cancel-register-course">Hủy đăng kí</button>
+    </div>
+</template>
+<template id="lessons-container-template">
+    <div id="lessons">
+        <div id="course-chapter" class="course-container"
+            video="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" name="" href="#/">
+            video1</div>
+    </div>
+</template>
+<template id="lessons-list-template">
+    <link rel="stylesheet" href="./css/container-video.css">
+    <!--    <link rel="stylesheet" href="">-->
+    <div id="container-video">
+        <div id="lessons-list">
+
+        </div>
+        <div id="video-lessons">
+            <!-- <iframe width="420" id="source-video" height="315"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+    
+            </iframe> -->
+            <!-- <iframe width="1280" height="720" id="source-video"
+                src="https://www.youtube.com/watch?v=81zcEl808Qw&amp;list=PLxsPK4iaQfIO1FinIL36UXU5nesojzgP6&amp;index=2"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe> -->
+            <!-- <iframe width="1280" height="720" id="source-video"
+                src="https://www.youtube.com/embed/81zcEl808Qw?list=PLxsPK4iaQfIO1FinIL36UXU5nesojzgP6" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> -->
+            <video width="600" height="400" id="video" controls autoplay>
+                <source id="source-video" src="" type="video/mp4">
+            </video>
+            <div id="category"></div>
+            <div id="description"></div>
+            <div id="owner"></div>
+        </div>
+    </div>
+</template>
+
+<template id="course_screens">
+    <nav-bar></nav-bar>
+    <menu-home></menu-home>
+    <course-list></course-list>
+</template>
+
+<template id="register-screen">
+    <nav-bar></nav-bar>
+    <register-form></register-form>
+</template>
+
+<template id="login-screen">
+    <nav-bar></nav-bar>
+    <login-form></login-form>
+</template>
+
+<template id="content-home">
+    <link rel="stylesheet" href="./css/home-page.css">
+    <div id="img-content-home">
+        <img id="img" src="./image//trangchu.jpg" alt="" srcset="">
+    </div>
+    <div id="container-content-home">
+        <h1 id="title-content-home">Hãy đến với Japan Elearning
+            nơi khởi nguồn mọi đam mê</h1>
+    </div>
+</template>
+<template id="register-course-screen">
+    <nav-bar></nav-bar>
+    <menu-home></menu-home>
+    <register-course name="N1"></register-course>
+    <register-course name="N2"></register-course>
+    <register-course name="N3"></register-course>
+    <register-course name="N4"></register-course>
+    <register-course name="N5"></register-course>
+
+</template>
+
+<template id="index-screen">
+    <nav-bar></nav-bar>
+    <menu-home></menu-home>
+    <content-home></content-home>
+
+    <!-- <register-screen-course></register-screen-course>
+
+       <lesson-container name="bai so 1" link-video="khiem" owner="tac gia" category="n1" description="mo ta"></lesson-container>
+       <lesson-container name="bai so 2" link-video="khiem" owner="tac gia" category="n1" description="mo ta"></lesson-container>
+       <lesson-container name="bai so 3" link-video="khiem" owner="tac gia" category="n1" description="mo ta"></lesson-container>
+    <lesson-container></lesson-container>
+    <lesson-list></lesson-list> -->
+</template>
+<template id="register-course-script">
+
+</template>
+<template id="create-course-screen">
+    <nav-bar></nav-bar>
+    <menu-home></menu-home>
+    <create-courses></create-courses>
+</template>
+<script src="//unpkg.com/navigo@6"></script>
+<script src="./js/app.js" type="module"></script>
+<script src="js/route.js" type="module"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+
+</html>

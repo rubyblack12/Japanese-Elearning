@@ -1,0 +1,35 @@
+#img-content-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#img {
+    height: 600px;
+    width: 1300px;
+    border-radius: 20px;
+    image-rendering: pixelated;
+}
+
+#title-content-home {
+    color: rgb(221, 19, 19);
+    display: flex;
+    justify-content: center;
+}
+
+#menu-home>a {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    margin-left: 30px;
+}
+
+#menu-home {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}

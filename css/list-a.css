@@ -1,0 +1,13 @@
+#list-a {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    color: rgb(44, 5, 151);
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 500px;
+}

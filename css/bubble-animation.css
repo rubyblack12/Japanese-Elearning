@@ -1,0 +1,148 @@
+     .stylie {
+            animation-name: stylie-transform-keyframes;
+            animation-duration: 3000ms;
+            animation-delay: 0ms;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transform-origin: 0 0;
+        }
+
+        @keyframes stylie-transform-keyframes {
+            0% {
+                transform: translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            1.15% {
+                transform: translate(-4.2021px, -0.1593px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            2.3% {
+                transform: translate(-8.2568px, -0.6373px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            3.45% {
+                transform: translate(-12.1641px, -1.434px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            4.6% {
+                transform: translate(-15.9239px, -2.5493px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            5.75% {
+                transform: translate(-19.5363px, -3.9834px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            6.9% {
+                transform: translate(-23.0012px, -5.736px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            8.05% {
+                transform: translate(-26.3187px, -7.8074px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            9.2% {
+                transform: translate(-29.4887px, -10.1974px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            10.34% {
+                transform: translate(-32.5113px, -12.9061px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            11.49% {
+                transform: translate(-35.3864px, -15.9334px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            12.64% {
+                transform: translate(-38.1141px, -19.2794px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            13.79% {
+                transform: translate(-40.6944px, -22.9441px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            14.94% {
+                transform: translate(-43.1272px, -26.9275px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            16.09% {
+                transform: translate(-45.4126px, -31.2295px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            17.24% {
+                transform: translate(-47.5505px, -35.8502px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            18.39% {
+                transform: translate(-49.541px, -40.7895px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            19.54% {
+                transform: translate(-51.3841px, -46.0476px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            20.69% {
+                transform: translate(-53.0797px, -51.6243px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            21.84% {
+                transform: translate(-54.6278px, -57.5196px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            22.99% {
+                transform: translate(-56.0285px, -63.7337px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            24.14% {
+                transform: translate(-57.2818px, -70.2663px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            25.29% {
+                transform: translate(-58.3876px, -77.1177px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            26.44% {
+                transform: translate(-59.346px, -84.2878px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            27.59% {
+                transform: translate(-60.157px, -91.7765px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            28.74% {
+                transform: translate(-60.8205px, -99.5838px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            29.89% {
+                transform: translate(-61.3365px, -107.7099px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            31.03% {
+                transform: translate(-61.7051px, -116.1546px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            32.18% {
+                transform: translate(-61.9263px, -124.918px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+            }
+
+            33.33% {
+                transform: translate(-62px, -134px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+                animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+            }
+
+            66.67% {
+                transform: translate(33px, -291px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+                animation-timing-function: cubic-bezier(.25, .25, .75, .75);
+            }
+
+            100% {
+                transform: translate(-59px, -472px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+                opacity: 0;
+            }
+        }
+
+        html::after {
+            content: url(https://ga-beacon.appspot.com/UA-42910121-1/stylie?pixel);
+            position: absolute;
+            left: -999em;
+        }

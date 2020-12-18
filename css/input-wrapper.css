@@ -1,0 +1,21 @@
+#input-main {
+    background-color: rgba(106, 177, 135, 0.2);
+    border: 1px solid #6AB187;
+    border-radius: 5px;
+    color: #6AB187;
+    padding: 10px;
+    outline: none;
+    width: 300px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#input-error {
+    color: #DD5145;
+    font-size: 14px;
+}
+
+#input-wrapper {
+    margin-bottom: 20px;
+}
